@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM  "http://testng.org/testng-1.0.dtd">
+
+<suite name="Sdet TestNGSuite">
+	<listeners>
+		<listener class-name="utility.Reporting"></listener>
+	</listeners>
+	<test name="Demo TestNG Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<!-- <class name="testCases.TC_01_Login"></class> -->
+			<class name="testCases.TC_02_LoginWithMultipleDataSets"></class>
+			<class name="restTestCases.VideoGameApi"></class>
+		</classes>
+	</test>
+</suite>

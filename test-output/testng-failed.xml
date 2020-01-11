@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sdet TestNGSuite]">
+  <listeners>
+    <listener class-name="utility.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Demo TestNG Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testCases.TC_02_LoginWithMultipleDataSets">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="Login" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- testCases.TC_02_LoginWithMultipleDataSets -->
+    </classes>
+  </test> <!-- Demo TestNG Test(failed) -->
+</suite> <!-- Failed suite [Sdet TestNGSuite] -->
