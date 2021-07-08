@@ -7,6 +7,15 @@
   <test thread-count="5" name="Demo TestNG Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
+      <class name="restTestCases.VideoGameApi">
+        <methods>
+          <include name="updateVideoGamebyId"/>
+          <include name="deleteVideoGamebyId"/>
+          <include name="getVideoGamebyId"/>
+          <include name="addVideoGame"/>
+          <include name="loadAllVideoGames"/>
+        </methods>
+      </class> <!-- restTestCases.VideoGameApi -->
       <class name="testCases.TC_02_LoginWithMultipleDataSets">
         <methods>
           <include name="tearDown"/>

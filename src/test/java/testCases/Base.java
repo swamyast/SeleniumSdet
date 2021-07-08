@@ -32,13 +32,12 @@ public class Base {
 	public void setUp(String browser) {
 		logger=Logger.getLogger("eBanking");
 		PropertyConfigurator.configure("log4j.properties");
-		switch(browser) 
-		{
-		case "firefox":
+		
+		if(browser.contentEquals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", readconfig.getPropertyValue("FireFoxPath"));
 			driver=new FirefoxDriver();
-			break;
-		case "chrome":
+		}
+		else if(browser.contentEquals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", readconfig.getPropertyValue("ChromePath"));
 			driver=new ChromeDriver();
 		}

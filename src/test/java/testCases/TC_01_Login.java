@@ -22,7 +22,7 @@ public class TC_01_Login extends Base{
 			Assert.assertTrue(false);
 	}
 	
-	@Test
+	//@Test
 	public void TC_02_VerifyLoginWithWrongTitle() {
 		
 		/*
@@ -31,7 +31,7 @@ public class TC_01_Login extends Base{
 		 * logger.info("Entered Password "+Password); lp.Login();
 		 */
 		System.out.println(driver.getTitle());
-		if(driver.getTitle().equals("Execute Automationss")) {
+		if(driver.getTitle().equals("Execute Automations")) {
 			Assert.assertTrue(true);
 		}
 		else

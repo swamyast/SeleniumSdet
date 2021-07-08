@@ -8,9 +8,9 @@
 	<test name="Demo TestNG Test">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<!-- <class name="testCases.TC_01_Login"></class> -->
-			<class name="testCases.TC_02_LoginWithMultipleDataSets"></class>
-			<class name="restTestCases.VideoGameApi"></class>
+			<class name="testCases.TC_01_Login"></class>
+			<!-- <class name="testCases.TC_02_LoginWithMultipleDataSets"></class> -->
+			<!-- <class name="restTestCases.VideoGameApi"></class> -->
 		</classes>
 	</test>
 </suite>
